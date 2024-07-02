@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wonderful Indonesia</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="video-background">
+        <!--  <video autoplay muted loop id="background-video">
+            <source src="Resources/raja-ampat.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video> -->
+        <iframe
+            src="https://www.youtube.com/embed/3grIIRIzpM0?autoplay=1&loop=1&controls=0&vq=hd1080&showinfo=0&playlist=3grIIRIzpM0&mute=1"
+            frameborder="0" allow="autoplay; fullscreen" allowfullscreen id="background-video"></iframe>
+    </div>
+
+    <div class="content">
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#" onclick="showSection('cultures')">CULTURES</a></li>
+                <li><a href="#" onclick="showSection('tourism')">TOURISM</a></li>
+                <li><a href="#" onclick="showSection('hotel')">HOTEL</a></li>
+            </ul>
+        </nav>
+        <button class="start-trip" onclick="openForm()">MAKE A TRIP</button>
+    </div>
+
+    <div id="cultures" class="section">
+        <button class="close-btn" onclick="closeSection('cultures')">&times;</button>
+        <div class="slideshow-container" id="cultures-slideshow">
+            <div class="slide fade">
+                <img src="Resources/Cultures-Raja Ampat.jpg" alt="Culture 1">
+                <div class="caption">Raja Ampat adalah rumah bagi beberapa suku asli yang telah mendiami wilayah ini
+                    selama berabad-abad. Suku-suku ini termasuk suku Maya, suku Ambel, dan suku Matbat. Mereka hidup
+                    tersebar di pulau-pulau kecil dan besar di kawasan Raja Ampat dan memiliki tradisi serta budaya yang
+                    kaya dan beragam. Kehidupan suku-suku ini sangat bergantung pada alam, dengan aktivitas utama mereka
+                    adalah memancing dan berburu. Selain itu, mereka juga dikenal karena kerajinan tangan tradisional
+                    yang unik dan tarian-tarian adat yang menjadi daya tarik budaya.</div>
+            </div>
+            <div class="slide fade">
+                <img src="Resources/Cultures-Danau Toba.jpg" alt="Culture 2">
+                <div class="caption">Danau Toba, yang terletak di Sumatera Utara, Indonesia, adalah rumah bagi suku
+                    Batak. Suku Batak terkenal dengan adat dan budaya mereka yang kaya dan beragam, terdiri dari
+                    beberapa sub-suku seperti Batak Toba, Batak Karo, Batak Simalungun, Batak Pakpak, Batak Angkola, dan
+                    Batak Mandailing. Mereka memiliki bahasa, adat istiadat, serta rumah adat tradisional yang unik
+                    disebut rumah bolon. Suku Batak juga terkenal dengan sistem marga (klan) yang diwariskan
+                    turun-temurun dan menjadi identitas penting bagi setiap individu dalam masyarakat Batak.</div>
+            </div>
+            <div class="slide fade">
+                <img src="Resources/Cultures-Pulau Komodo.jpg" alt="Culture 3">
+                <div class="caption">Pulau Komodo merupakan bagian dari Kepulauan Nusa Tenggara di Indonesia. Pulau ini
+                    terkenal sebagai habitat asli dari komodo, namun tidak banyak dihuni oleh manusia. Penduduk yang
+                    tinggal di sekitar Pulau Komodo sebagian besar berasal dari suku Manggarai, suku Bajo, dan suku
+                    Bima. Mereka mendiami beberapa desa di sekitar Taman Nasional Komodo seperti Desa Komodo, Desa
+                    Rinca, dan Desa Papagarang. Penduduk lokal ini sebagian besar hidup sebagai nelayan, petani, dan
+                    pemandu wisata, memanfaatkan kekayaan alam dan keindahan Pulau Komodo sebagai sumber mata
+                    pencaharian.</div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1, 'cultures-slideshow')"></span>
+                <span class="dot" onclick="currentSlide(2, 'cultures-slideshow')"></span>
+                <span class="dot" onclick="currentSlide(3, 'cultures-slideshow')"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="tourism" class="section">
+        <button class="close-btn" onclick="closeSection('tourism')">&times;</button>
+        <div class="slideshow-container" id="tourism-slideshow">
+            <div class="slide fade">
+                <img src="Resources/Raja Ampat.jpg" alt="Tourism 1">
+                <div class="caption">Raja Ampat adalah sebuah kepulauan yang terletak di ujung barat laut Papua Barat,
+                    Indonesia. Nama Raja Ampat sendiri berasal dari legenda lokal tentang empat raja yang memerintah
+                    empat pulau utama di kawasan ini: Misool, Salawati, Batanta, dan Waigeo. Raja Ampat dikenal sebagai
+                    salah satu destinasi menyelam terbaik di dunia karena kekayaan biota lautnya yang luar biasa,
+                    termasuk terumbu karang yang indah, berbagai jenis ikan, dan spesies laut langka. Sejarah Raja Ampat
+                    mencakup berbagai pengaruh, mulai dari kekuasaan Kesultanan Tidore hingga pengaruh kolonial Eropa,
+                    yang semuanya telah berkontribusi pada keragaman budaya dan sejarah kawasan ini.</div>
+            </div>
+            <div class="slide fade">
+                <img src="Resources/Danau Toba.jpg" alt="Tourism 2">
+                <div class="caption">Danau Toba adalah danau vulkanik terbesar di dunia dan salah satu keajaiban alam
+                    Indonesia. Terbentuk dari letusan supervolcano sekitar 74.000 tahun yang lalu, danau ini memiliki
+                    panjang sekitar 100 kilometer, lebar 30 kilometer, dan kedalaman hingga 505 meter. Di tengah Danau
+                    Toba terdapat Pulau Samosir, sebuah pulau besar yang hampir seukuran negara Singapura. Danau Toba
+                    bukan hanya tempat yang indah untuk dikunjungi, tetapi juga memegang peran penting dalam sejarah
+                    geologi dunia dan merupakan pusat budaya bagi masyarakat Batak.</div>
+            </div>
+            <div class="slide fade">
+                <img src="Resources/Pulau Komodo.jpg" alt="Tourism 3">
+                <div class="caption">Pulau Komodo adalah salah satu dari tiga pulau utama yang membentuk Taman Nasional
+                    Komodo, yang juga termasuk Pulau Rinca dan Pulau Padar, serta beberapa pulau kecil lainnya. Pulau
+                    ini dikenal luas sebagai habitat komodo, kadal terbesar di dunia yang hanya ditemukan di wilayah
+                    ini. Taman Nasional Komodo didirikan pada tahun 1980 untuk melindungi komodo dan lingkungan
+                    alaminya, dan kemudian dinyatakan sebagai Situs Warisan Dunia oleh UNESCO pada tahun 1991. Pulau ini
+                    menawarkan keindahan alam yang menakjubkan, mulai dari pantai berpasir merah muda, terumbu karang
+                    yang spektakuler, hingga pemandangan bukit yang dramatis.</div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1, 'tourism-slideshow')"></span>
+                <span class="dot" onclick="currentSlide(2, 'tourism-slideshow')"></span>
+                <span class="dot" onclick="currentSlide(3, 'tourism-slideshow')"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="hotel" class="section">
+        <button class="close-btn" onclick="closeSection('hotel')">&times;</button>
+        <div class="slideshow-container" id="hotel-slideshow">
+            <div class="slide fade">
+                <img src="Resources/Hotel-Raja Ampat.jpg" alt="Hotel 1">
+                <div class="caption">Di sekitar Raja Ampat terdapat beberapa pilihan akomodasi yang nyaman dan menarik
+                    bagi para wisatawan. Salah satu hotel fiktif yang bisa menjadi pilihan adalah "Raja Ampat Paradise
+                    Resort". Hotel ini terletak di Pulau Waigeo, dengan alamat di Jl. Pantai Pasir Putih No. 10. Harga
+                    kamar di Raja Ampat Paradise Resort mulai dari Rp 2.500.000 per malam, dengan fasilitas seperti
+                    kolam renang, restoran, dan layanan penyelaman. Hotel ini juga menawarkan paket tur untuk
+                    menjelajahi keindahan alam bawah laut Raja Ampat. Lokasinya yang strategis membuatnya mudah
+                    dijangkau dari pelabuhan utama dan dekat dengan beberapa spot menyelam terbaik di kawasan ini.</div>
+            </div>
+            <div class="slide fade">
+                <img src="Resources/Hotel-Danau Toba.jpg" alt="Hotel 2">
+                <div class="caption">Di sekitar Danau Toba terdapat berbagai pilihan akomodasi yang dapat memenuhi
+                    kebutuhan wisatawan. Salah satunya adalah Hotel Toba Paradise, yang menawarkan pemandangan langsung
+                    ke danau dengan harga kamar mulai dari Rp 500.000 per malam. Hotel ini terletak di Jl. Lingkar Danau
+                    Toba No. 7, Parapat, Sumatera Utara. Fasilitas yang ditawarkan termasuk kolam renang, restoran
+                    dengan masakan lokal dan internasional, serta layanan tur untuk menjelajahi keindahan alam dan
+                    budaya sekitar Danau Toba. Hotel ini juga menyediakan akses mudah ke Pulau Samosir, di mana
+                    wisatawan dapat mengeksplorasi lebih dalam budaya dan tradisi Batak.</div>
+            </div>
+            <div class="slide fade">
+                <img src="Resources/Hotel-Pulau Komodo.jpg" alt="Hotel 3">
+                <div class="caption">Untuk wisatawan yang ingin mengunjungi Pulau Komodo, terdapat berbagai pilihan
+                    akomodasi di dekatnya, terutama di Labuan Bajo, pintu gerbang menuju Taman Nasional Komodo. Salah
+                    satu pilihan terbaik adalah Komodo Resort and Dive Center, yang menawarkan pengalaman menginap mewah
+                    dengan harga mulai dari Rp 1.500.000 per malam. Terletak di Jl. Soekarno-Hatta, Labuan Bajo, Nusa
+                    Tenggara Timur, hotel ini menyediakan fasilitas lengkap seperti kolam renang, restoran tepi pantai,
+                    pusat penyelaman, dan tur kapal pribadi ke Pulau Komodo dan pulau-pulau sekitarnya. Para tamu dapat
+                    menikmati pemandangan laut yang menakjubkan, snorkeling, dan menyelam di salah satu tempat menyelam
+                    terbaik di dunia, semuanya dengan kenyamanan dan layanan berkualitas tinggi.</div>
+            </div>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1, 'hotel-slideshow')"></span>
+                <span class="dot" onclick="currentSlide(2, 'hotel-slideshow')"></span>
+                <span class="dot" onclick="currentSlide(3, 'hotel-slideshow')"></span>
+            </div>
+        </div>
+    </div>
+
+    <div id="trip-form" class="form-container">
+        <button class="close-btn" onclick="closeForm()">&times;</button>
+        <form action="/submit-trip" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <fieldset>
+                <legend>Destination:</legend>
+                <label><input type="radio" name="destination" value="Raja Ampat" required>Raja Ampat</label>
+                <label><input type="radio" name="destination" value="Danau Toba"> Danau Toba</label>
+                <label><input type="radio" name="destination" value="Pulau Komodo">Pulau Komodo</label>
+            </fieldset>
+
+            <label for="hotel">Hotel:</label>
+            <select id="hotel" name="hotel">
+                <option value="hotel1">Hotel Raja Ampat</option>
+                <option value="hotel2">Hotel Danau Toba</option>
+                <option value="hotel3">Hotel Pulau Komodo</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <footer>
+        Created by Ravi Tegar Al Amin
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
